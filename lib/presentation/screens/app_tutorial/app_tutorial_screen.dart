@@ -92,7 +92,7 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
           endTutorial ? Positioned(
             bottom: 20,
             right:20, 
-            // Creamos una animacion
+            // Creamos una animacion con el paquete animate_do
             child: FadeInRight(
               from: 15,
               delay: const Duration(seconds:1),

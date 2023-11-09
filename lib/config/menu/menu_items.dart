@@ -59,4 +59,10 @@ const appMenuItems = <MenuItem>[
     link: '/tutorial', 
     icon: Icons.play_arrow_rounded
   ) ,
+  MenuItem(
+    title: 'Infinite Scroll', 
+    subtitle: 'Listas infinitas y pull para refrescar', 
+    link: '/infinite', 
+    icon: Icons.card_giftcard
+  ) ,
 ];
