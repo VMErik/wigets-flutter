@@ -1,13 +1,19 @@
 import 'package:go_router/go_router.dart';
 // Apuntamos a donde estan todas nuestras screens exportadas
 import 'package:widgets_app/presentation/screens.dart';
+import 'package:widgets_app/presentation/screens/counter/counter_screen.dart';
 
 
 final appRouter = GoRouter(
   // Definimos nuesta ruta principal
   initialLocation: '/',
   routes: [
-      GoRoute(
+    GoRoute(
+      name :CounterScreen.name , 
+      path: '/counter',
+      builder: (context, state) => const CounterScreen(),
+    ),
+    GoRoute(
       name : HomeScreen.name,
       path: '/',
       builder: (context, state) => const HomeScreen(),
@@ -51,6 +57,11 @@ final appRouter = GoRouter(
       name :InfiniteScrollScreen.name , 
       path: '/infinite',
       builder: (context, state) => const InfiniteScrollScreen(),
+    ),
+    GoRoute(
+      name :ThemeChangerScreen.name , 
+      path: '/theme-changer',
+      builder: (context, state) => const ThemeChangerScreen(),
     ),
   ],
 );
