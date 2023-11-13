@@ -31,4 +31,18 @@ ThemeData getTheme()=> ThemeData(
   )
 );
 
+
+// Hacemos una copia de nuetro app Theme
+// Se utiliza para copiar clases
+AppTheme copyWith(
+  {
+    int? selectedColor ,
+    bool? isDarkMode 
+    }
+) => AppTheme(
+  // Como nuestros parametros son opcionales, evaluamos si lo estan enviado
+  selectedColor: selectedColor ?? this.selectedColor, 
+  isDarkMode: isDarkMode ?? this.isDarkMode
+);
+
 }
