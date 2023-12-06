@@ -21,6 +21,8 @@ En este proyecto encontraras tambien.
 * Creacion de menus laterales
 
 **Imagenes de la aplicacion**
+
+
 ![Vista principal](/lib/assets/img/widgets1.png)
 
 ![Pagina de botones](/lib/assets/img/widgets2.png)
